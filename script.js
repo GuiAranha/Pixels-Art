@@ -6,10 +6,9 @@ let board = document.getElementById('pixel-board');
 
 
 function appendPixel(){
-    let pixelBoard = document.getElementById('pixel-board');
     let square = document.createElement('div');
     square.className = "pixel";
-    pixelBoard.appendChild(square);
+    board.appendChild(square);
 }
 
 for(i = 0; i < 25; i+=1){
@@ -40,6 +39,13 @@ function painting(){
 
 
 window.onload = function () {
+    let clear = document.getElementById('clear-board');
+
+    clear.addEventListener('click', function(event){
+        for ( let i = board.firstElementChild; i !== null; i = i.nextElementSibling){
+            i.style.background = "white";
+        }
+    })
 
     colorBlack.addEventListener('click', function(event){
         selectColor(colorBlack);
@@ -56,8 +62,6 @@ window.onload = function () {
     board.addEventListener('click', function (event){
         event.target.style.background = "red";
     });
+
     painting();
 };
-
-//DIV                 .remove
-//newElement.classList.add('selected')
