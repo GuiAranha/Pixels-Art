@@ -21,6 +21,10 @@
     background-color: green;
 }
 
+.selected{
+
+}
+
 .pixel{
     width: 40px;
     height: 40px;
