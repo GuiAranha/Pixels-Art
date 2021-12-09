@@ -1,0 +1,29 @@
+.color{
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.c1{
+    background-color: red;
+}
+
+.c2{
+    background-color: black;
+}
+
+.c3{
+    background-color: blue;
+}
+
+.c4{
+    background-color: green;
+}
+
+#color-palette{
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
